@@ -18,11 +18,11 @@ jobs:
     strategy:
       matrix:
         # Changes here might also require changes to .ddev/config.yaml.
-        php: [ '8.0', '8.4' ]
+        php: [ '8.0', '8.5' ]
       fail-fast: false
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
 
       - uses: ddev/github-action-setup-ddev@v1
         with:
